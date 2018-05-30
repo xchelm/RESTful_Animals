@@ -1,0 +1,13 @@
+<% include partials/header %>
+
+<h1>Welcome to <%= animal.name %></h1>
+<a href="/animals">Go Back</a>
+<div>
+    <img src="<%= animal.image %>" alt="<%= animal.name %>">
+    <h3>This animal is <%= animal.age %> years old!</h3>
+    <a href="/animals/<%= animal._id %>/edit">Edit Your Animal</a>
+</div>
+
+
+<% include partials/footer %>
+

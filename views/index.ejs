@@ -1,0 +1,14 @@
+<% include partials/header %>
+<h1>This is the Index</h1>
+<br>
+<a href="/animals/new"> Add a New Animal</a>
+<br>
+<% animal.forEach(animal => {%>
+    <div>
+        <img src="<%= animal.image%>" alt="<%= animal.name%>">
+        <h3><%= animal.name%> <span><%= animal.age%></span></h3>
+        <a href="/animals/<%= animal._id%>">More Info</a>
+    </div>
+    <br>
+<% })%>
+<% include partials/footer %>

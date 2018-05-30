@@ -1,0 +1,14 @@
+<% include partials/header %>
+
+<h1>Add a New Animal</h1>
+
+<form action="/animals" method="POST">
+    <input type="text" name="animal[name]" placeholder="Name">
+    <input type="text" name="animal[image]" placeholder="Image Link">
+    <input type="text" name="animal[age]" placeholder="Age">
+    <button>Submit</button>
+</form>
+
+<% include partials/footer %>
+
+
